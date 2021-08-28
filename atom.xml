@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-28T09:32:02.908Z</updated>
+  <updated>2021-08-28T16:37:01.530Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>point</title>
+    <link href="http://example.com/2021/08/29/point/"/>
+    <id>http://example.com/2021/08/29/point/</id>
+    <published>2021-08-28T16:34:17.326Z</published>
+    <updated>2021-08-28T16:37:01.530Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="指针的优点"><a class="markdownIt-Anchor" href="#指针的优点"></a> 指针的优点</h3><blockquote><p>提高软件效率</p></blockquote><blockquote><p>提高软件维护性</p></blockquote><blockquote><p>降低存储空间</p></blockquote><p>傲腾硬盘</p><p>本质：操作内存   存读</p><h3 id="计算机的发展"><a class="markdownIt-Anchor" href="#计算机的发展"></a> 计算机的发展</h3><p>地址 字节</p><p>8位机器</p><p>16位机器</p><p>标号取代地址 有变量的概念</p><p>类型取代大小</p><hr /><p>指针包含的信息： 地址信息 解释信息</p><p>地址可变</p><figure class="highlight c"><figcaption><span>text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> *pi</span><br><span class="line"><span class="keyword">long</span> *pl</span><br><span class="line"><span class="keyword">char</span>* pc;</span><br><span class="line">en.cppreference.com/w/</span><br><span class="line">isocpp.org<span class="comment">//各个版本的编译器</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">void</span> * pv;<span class="comment">//任意类型指针、地址都用*p  有些强转成void*</span></span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="指针操作"><a class="markdownIt-Anchor" href="#指针操作"></a> 指针操作</h3><blockquote><p>取地址操作</p></blockquote><blockquote><p>间接引用</p></blockquote><blockquote><p>运算 ± ++ –  -&gt;  整型 指针运算</p></blockquote><p>p1=&amp;a1</p><p>可以无限取地址或者内容</p><p>&amp;type  等于 type*</p><p>间接操作 取内容</p><p>*pi2=1;</p><p>间接操作num2</p><p>type *  *type==&gt;type</p><p>&amp;*抵消</p><p>等价于 p</p><hr /><p>type*+n=adress +n*sizeof(type);</p><p>int ary[]={1,2,3};</p><p>int max=ary[2];</p><p>ary[2]=4;</p><p>int *pmax=&amp;ary[2];</p><hr /><h5 id="指针运算的坑"><a class="markdownIt-Anchor" href="#指针运算的坑"></a> 指针运算的坑</h5><p>pmax -pmin</p><p>计算指针之间的类型数量 相差几个相关类型的指针</p><hr /><h3 id="函数指针"><a class="markdownIt-Anchor" href="#函数指针"></a> 函数指针</h3><figure class="highlight c"><figcaption><span>text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">pCode=pCode+*(<span class="keyword">int</span>*)(pCode+<span class="number">1</span>)+<span class="number">5</span>;</span><br><span class="line"><span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;*pCode!=<span class="number">0xc3</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%02x&quot;</span>,*pCode);</span><br><span class="line">    pCode=pCode+<span class="number">1</span>;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">((<span class="keyword">void</span>(*)())(<span class="keyword">void</span>*)code)();</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;指针的优点&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#指针的优点&quot;&gt;&lt;/a&gt; 指针的优点&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提高软件效率&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;提高软件维护性&lt;/</summary>
+      
+    
+    
+    
+    <category term="C" scheme="http://example.com/categories/C/"/>
+    
+    
+    <category term="c" scheme="http://example.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="http://example.com/2021/08/28/hello-world/"/>
     <id>http://example.com/2021/08/28/hello-world/</id>
     <published>2021-08-28T09:32:02.908Z</published>
-    <updated>2021-08-28T09:32:02.908Z</updated>
+    <updated>2021-08-28T15:12:30.073Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -33,6 +62,10 @@
     
     
     
+    <category term="C++" scheme="http://example.com/categories/C/"/>
+    
+    
+    <category term="c++" scheme="http://example.com/tags/c/"/>
     
   </entry>
   
